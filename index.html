@@ -14,28 +14,100 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
         <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script> -->
         <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+        <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+        <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+    	<link rel="stylesheet" href="/assets/css/style.css"> <!-- Resource style -->
+    	<script src="assets/js/modernizr.js"></script> <!-- Modernizr -->
+
         <script>
             $(document).ready(function(){
                 $.backstretch("/assets/images/background_blue.png");
                 $(".faq-card").flip({
                     axis: 'x',
                 });
+                window.sr = ScrollReveal({});
+                sr.reveal('.fadezzz', { duration: 1000});
+                sr.reveal('.faq-card', { duration: 500});
+                $("a").on('click', function(event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                  // Prevent default anchor click behavior
+                  event.preventDefault();
+
+                  // Store hash
+                  var hash = this.hash;
+
+                  // Using jQuery's animate() method to add smooth page scroll
+                  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                  $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                  }, 800, function(){
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                  });
+                } // End if
+              });
             });
         </script>
     </head>
     <body>
-        <div class="main-background">
+        <nav id="cd-vertical-nav">
+    <ul>
+        <li>
+            <a href="#top" data-number="1">
+                <span class="cd-dot"></span>
+                <span class="cd-label">Intro</span>
+            </div>
+            </a>
+        </li>
+        <li>
+            <a href="#about" data-number="2">
+                <span class="cd-dot"></span>
+                <span class="cd-label">About</span>
+            </a>
+        </li>
+        <li>
+            <a href="#themes" data-number="3">
+                <span class="cd-dot"></span>
+                <span class="cd-label">Themes</span>
+            </a>
+        </li>
+        <li>
+            <a href="#location" data-number="4">
+                <span class="cd-dot"></span>
+                <span class="cd-label">Location</span>
+            </a>
+        </li>
+        <li>
+            <a href="#faqs" data-number="5">
+                <span class="cd-dot"></span>
+                <span class="cd-label">FAQs</span>
+            </a>
+        </li>
+        <li>
+            <a href="#sponsers" data-number="6">
+                <span class="cd-dot"></span>
+                <span class="cd-label">Sponsors</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+<a class="cd-nav-trigger cd-img-replace">Open navigation<span></span></a>
+
+        <div class="main-background" id="top">
             <div class="main-logo">
                 <img src="assets/images/FSHack2-800.png" alt="HackFresno" height="400" width="400">
                 <div class="date-and-location">
                     <h2 class="display-5">
-                        April 14-16 | Fresno State
+                        April 14-16 / Fresno State
                     </h2>
                     <a class="signup-hyper" href="#">
                         <div class="row no-gutters">
                             <div class="col-sm-3 col-md-3 col-lg-3"></div>
                             <div class="signup-button col-sm-6 col-md-6 col-lg-6">
-                                <h6 class="display-4 signup-text">
+                                <h6 class="display-5 signup-text">
                                     APPLY
                                 </h6>
                             </div>
@@ -45,27 +117,27 @@
             </div>
         </div>
         <div class="space"></div>
-        <div class="about">
-            <div class="container pt-3 pb-3">
-                <h2 class="display-4 pt-3">What is HackFresno?</h2>
-                <p>
-                  HackFresno is a student hackathon at Fresno State
-                  that encourages creativity and innovation while solving
-                  some of the world's toughest problems. Stay up for 24 hours with the
-                  coolest and brightest people you will ever meet, and help design a product
-                  that can improve the world.
-                </p>
-                <p>
-                  Everyone is welcome, from the most experienced developers and
-                  designers to the first-time enthusiasts who may have never opened
-                  a terminal window, but have a drive to solve our biggest challenges.
-                  Regardless of your skill, there is a place for you at HackFresno.
-                </p>
+            <div class="about" id="about">
+                <div class="container pt-3 pb-3 fadezzz">
+                    <h1 class="display-5" style="padding-top: 50px;padding-bottom: 30px;color:#084C8C;font-weight:bold">What is HackFresno?</h1>
+                    <p style="font-size: 20px;">
+                      HackFresno is a student hackathon at Fresno State
+                      that encourages creativity and innovation while solving
+                      some of the world's toughest problems. Stay up for 24 hours with the
+                      coolest and brightest people you will ever meet, and help design a product
+                      that can improve the world.
+                    </p>
+                    <p style="font-size: 20px;">
+                      Everyone is welcome, from the most experienced developers and
+                      designers to the first-time enthusiasts who may have never opened
+                      a terminal window, but have a drive to solve our biggest challenges.
+                      Regardless of your skill, there is a place for you at HackFresno.
+                    </p>
+                </div>
             </div>
-        </div>
         <div class="row no-gutters" style="border-top: 1px solid #f0f0f0">
-            <div class="col-md-12 theme-header" style="height: 110px">
-                <h2 class="display-4 text-center">Themes</h2>
+            <div class="col-md-12 theme-header" id="themes" style="height: 210px">
+                <h1 class="display-5 text-center" style="margin-top: 50px; margin-bottom: 50px;color:#084C8C;font-weight:bold">Themes</h1>
                 <p>
             </div>
             <div class="col-md-3 first-theme" style="height: 400px">
@@ -76,7 +148,7 @@
             </div>
             <div class="col-md-3 second-theme" style="height: 400px">
                 <div class="container text-center vertical-center">
-                    <h2 class="display-5 theme-icon"><i class="fa fa-globe" aria-hidden="true"></i></h2>
+                    <h2 class="display-5 theme-icon"><i class="fa fa-heartbeat" aria-hidden="true"></i></h2>
                     <h2 class="display-5">Health and Wellness</h2>
                 </div>
             </div>
@@ -92,8 +164,8 @@
             </div>
         </div>
         <div class="row no-gutters">
-            <div class="col-md-12 location-header" style="height: 100px">
-                <h2 class="display-4 text-center pt-3">Location</h2>
+            <div class="col-md-12 location-header" id="location" style="height: 170px">
+                <h1 class="display-5 text-center" style="padding-top: 50px; padding-bottom: 50px;color:#084C8C;font-weight:bold">Location</h1>
             </div>
             <!-- <div class="col-md-2 first-location"></div> -->
             <div class="col-md-7 second-location text-center">
@@ -103,97 +175,93 @@
             <div class="col-md-5 fourth-location">
                 <div class="map-wrap">
                     <div class="overlay" onClick="style.pointerEvents='none'"></div>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3194.212666470313!2d-119.75389194917815!3d36.81342352455657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80945d050305ef45%3A0xd70c5f44616e7281!2sNorth+Gym%2C+Campus+Dr%2C+Fresno%2C+CA+93740!5e0!3m2!1sen!2sus!4v1486822024899" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>                </div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3194.212666470313!2d-119.75389194917815!3d36.81342352455657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80945d050305ef45%3A0xd70c5f44616e7281!2sNorth+Gym%2C+Campus+Dr%2C+Fresno%2C+CA+93740!5e0!3m2!1sen!2sus!4v1486822024899" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>                </div>
             </div>
         </div>
         <div class="faq">
             <div class="row no-gutters" style="border-top: 1px solid #f0f0f0">
-                <div class="col-md-12 faq-header">
-                    <h2 class="display-4 text-center pt-3">Frequently Asked Questions</h2>
+                <div class="col-md-12 faq-header" id="faqs" style="height:160px">
+                    <h1 class="display-5 text-center" style="padding-top: 50px;color:#084C8C;font-weight:bold">Frequently Asked Questions</h1>
                 </div>
-                <div class="col-md-4 faq-card">
+                <div class="col-md-3 faq-card">
                     <div class="front">
-                        <h2 class="pt-3 pl-3 display-3">What is a hackathon?</h2>
+                        <h2 class="pt-3 pl-3 display-5">What is a hackathon?</h2>
                     </div>
                     <div class="back">
-                        <h2 class="pt-3 pl-3 display-3">A hackathon is a nonstop 24-hour design and innovation competition. Students can develop projects that solve real-world problems in teams over the course of the event. At the end of the hackathon, the completed projects are displayed to judges and other participants.</h2>
+                        <h2 class="pt-3 pl-3 display-5">A hackathon is a nonstop 24-hour design and innovation competition. Students can develop projects that solve real-world problems in teams over the course of the event. At the end of the hackathon, the completed projects are displayed to judges and other participants.</h2>
                     </div>
                 </div>
-                <div class="col-md-4 faq-card">
+                <div class="col-md-3 faq-card">
                     <div class="front">
-                        <h2 class="pt-3 pl-3 display-3">So, we're not breaking into anyone's computers right?</h2>
+                        <h2 class="pt-3 pl-3 display-5">So, we're not breaking into anyone's computers right?</h2>
                     </div>
                     <div class="back">
-                        <h2 class="pt-3 pl-3 display-3">Nope! In this case, "hacking" refers to collaborating on a task, usually with code, to solve a specific problem. <a href="https://medium.com/essays-by-kern/what-is-a-hackathon-c2162b893b0a#.ha18iujrw">Here</a> is a great article that goes further in depth about hackathons: </h2>
+                        <h2 class="pt-3 pl-3 display-5">Nope! In this case, "hacking" refers to collaborating on a task, usually with code, to solve a specific problem. <a href="https://medium.com/essays-by-kern/what-is-a-hackathon-c2162b893b0a#.ha18iujrw">Read this</a> great article that goes further in depth about hackathons.</h2>
                     </div>
                 </div>
-                <div class="col-md-4 faq-card">
+                <div class="col-md-3 faq-card">
                     <div class="front">
-                        <h2 class="pt-3 pl-3 display-3">What does it cost to attend?</h2>
+                        <h2 class="pt-3 pl-3 display-5">What does it cost to attend?</h2>
                     </div>
                     <div class="back">
-                        <h2 class="pt-3 pl-3 display-3">Nothing at all! We provide all meals, snacks, and swag for free, so that all you have to worry about is what you'll be building.</h2>
+                        <h2 class="pt-3 pl-3 display-5">Nothing at all! We provide all meals, snacks, and swag for free, so that all you have to worry about is what you'll be building.</h2>
                     </div>
                 </div>
-                <div class="col-md-4 faq-card">
+                <div class="col-md-3 faq-card">
                     <div class="front">
-                        <h2 class="pt-3 pl-3 display-3">So what do I bring with me?</h2>
+                        <h2 class="pt-3 pl-3 display-5">So what do I bring with me?</h2>
                     </div>
                     <div class="back">
-                        <h2 class="pt-3 pl-3 display-3">You will need your student ID, government ID (to check out hardware),as well as your own computer and any other small hardware you may want to hack with. The event is overnight, so you may want to also bring a sleeping bag and pillow, as well as some toiletries. Please do not bring any cots, tents or large camping gear!</h2>
+                        <h2 class="pt-3 pl-3 display-5">You will need your student ID, government ID (to check out hardware),as well as your own computer and any other small hardware you may want to hack with. The event is overnight, so you may want to also bring a sleeping bag and pillow, as well as some toiletries. Please do not bring any cots, tents or large camping gear!</h2>
                     </div>
                 </div>
-                <div class="col-md-4 faq-card">
+                <div class="col-md-3 faq-card">
                     <div class="front">
-                        <h2 class="pt-3 pl-3 display-3">What if I'm a beginner?</h2>
+                        <h2 class="pt-3 pl-3 display-5">What if I'm a beginner?</h2>
                     </div>
                     <div class="back">
-                        <h2 class="pt-3 pl-3 display-3">Not to worry! We will have beginning hacking workshops at the start  of the event. There will also be tech talks and mentors present throughout to help you with your ideas.</h2>
+                        <h2 class="pt-3 pl-3 display-5">Not to worry! We will have beginning hacking workshops at the start  of the event. There will also be tech talks and mentors present throughout to help you with your ideas.</h2>
                     </div>
                 </div>
-                <div class="col-md-4 faq-card">
+                <div class="col-md-3 faq-card">
                     <div class="front">
-                        <h2 class="pt-3 pl-3 display-3">How do teams work?</h2>
+                        <h2 class="pt-3 pl-3 display-5">How do teams work?</h2>
                     </div>
                     <div class="back">
-                        <h2 class="pt-3 pl-3 display-3">Teams can be up to four members. If you don't have a team, don't worry! We will help you find a team once you get to the event.</h2>
+                        <h2 class="pt-3 pl-3 display-5">Teams can be up to four members. If you don't have a team, don't worry! We will help you find a team once you get to the event.</h2>
+                </div>
+            </div>
+                <div class="col-md-3 faq-card">
+                    <div class="front">
+                        <h2 class="pt-3 pl-3 display-5">Are there any rules?</h2>
+                    </div>
+                    <div class="back">
+                        <h2 class="pt-3 pl-3 display-5">We follow the MLH code of conduct.<br><a href="http://static.mlh.io/docs/mlh-code-of-conduct.pdf"> READ HERE</a></h2>
                     </div>
                 </div>
-                <div class="col-md-4 faq-card">
+                <div class="col-md-3 faq-card" style="margin-bottom:50px!important">
                     <div class="front">
-                        <h2 class="pt-3 pl-3 display-3">How do teams work?</h2>
+                        <h2 class="pt-3 pl-3 display-5">Help!</h2>
                     </div>
                     <div class="back">
-                        <h2 class="pt-3 pl-3 display-3">Teams can be up to four members. If you don't have a team, don't worry! We will help you find a team once you get to the event.</h2>
-                    </div>
-                </div>
-                <div class="col-md-4 faq-card">
-                    <div class="front">
-                        <h2 class="pt-3 pl-3 display-3">Are there any rules?</h2>
-                    </div>
-                    <div class="back">
-                        <h2 class="pt-3 pl-3 display-3">We follow the MLH code of conduct.<br><a href="http://static.mlh.io/docs/mlh-code-of-conduct.pdf"> READ HERE</a></h2>
-                    </div>
-                </div>
-                <div class="col-md-4 faq-card">
-                    <div class="front">
-                        <h2 class="pt-3 pl-3 display-3">Help!</h2>
-                    </div>
-                    <div class="back">
-                        <h2 class="pt-3 pl-3 display-3">If you have any other questions, reach out to us at any time.<br><a href="mailto:team@hackfresno.com">team@hackfresno.com</a></h2>
+                        <h2 class="pt-3 pl-3 display-5">If you have any other questions, reach out to us at any time.<br><a href="mailto:team@hackfresno.com">team@hackfresno.com</a></h2>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="sponsors">
+        <div class="sponsers row"  id="sponsers">
             <div class="col-md-2"></div>
             <div class="col-md-8">
-                <div class="container sponsors-info"></div>
+                <div class="container sponsers-info text-center">
+                    <h1 style="font-size:80px;color: white;">Sponsors coming soon!</h1>
+                    <h1 style="font-size:30px;color: white;">Interested in sponsoring? Contact team@hackfresno.com</h1>
+                </div>
+
             </div>
         </div>
         <div class="footer">
             <div class="container pt-3">
-                <h2 class="display-4">Follow Us:</h2>
+                <h1 class="display-5 pb-2">Follow Us:</h1>
                 <div class="row">
                     <div class="col-md-5">
                     </div>
