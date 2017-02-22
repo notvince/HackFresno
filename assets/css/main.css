@@ -3,7 +3,15 @@ body,html{
     width: 100%;
     margin:0;
 }
-
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400; // Corresponds to the Bold 400 style
+}
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6{
+  font-family: 'Raleway', sans-serif !important;
+  font-weight: 700 !important;
+}
 
 .navbar{
     width: 100%;
@@ -27,7 +35,7 @@ body,html{
     width: 400px;
     height: 600px;
     position: absolute;
-    top: 35%;
+    top: 39%;
     left: 50%;
     margin: -200px 0 0 -200px;
 }
@@ -106,13 +114,13 @@ body,html{
 
 .about{
     width:100%;
-    height: 250px;
+    height: 420px;
     background-color: white;
 }
 
 @media screen and (max-width: 767px) {
     .second-location{
-        background-color: rgba(18, 67, 90,0.5);
+        background-color: rgba(8, 76, 140,0.5);
         color: white;
         font-size: 80px;
         padding-top:70px !important;
@@ -124,22 +132,22 @@ body,html{
     opacity: 0.5;
 }
 .second-location{
-    background-color: rgba(18, 67, 90,0.5);
+    background-color: rgba(8, 76, 140,0.5);
     /*opacity: 0.5;*/
     color: white;
     font-size: 80px;
-    padding-top:130px;
+    padding-top:80px;
 }
 .second-location-sub{
     font-size: 30px;
 }
 .third-location{
-    background-color: #12435A;
+    background-color: white;
     opacity: 0.5;
 
 }
 .fourth-location{
-    background-color: #12435A;
+    background-color: white;
 }
 
 .location{
@@ -155,19 +163,19 @@ body,html{
     padding-top:20px;
 }
 .first-theme{
-    background-color: blue;
+    background-color: lightgrey;
     opacity: 0.5;
 }
 .second-theme{
-    background-color: red;
+    background-color: lightgrey;
     opacity: 0.5;
 }
 .third-theme{
-    background-color: blue;
+    background-color: lightgrey;
     opacity: 0.5;
 }
 .fourth-theme{
-    background-color: red;
+    background-color: lightgrey;
     opacity: 0.5;
 }
 .faq{
@@ -176,7 +184,7 @@ body,html{
     /*background-color: rgba(18, 67, 90,0.5);*/
 }
 .faq-card{
-    height: 400px;
+    height: 300px;
     border: 15px white solid;
 }
 .faq-header{
@@ -184,27 +192,26 @@ body,html{
     height: 100px;
 }
 .front{
-    color:white;
-    background-color:#084D8B;
+    color:black;
+    background-color:lightgrey;
 }
 .back{
-    color:white;
-    background-color:#084D8B;
+    color:black;
+    background-color:lightgrey;
 }
 .sponsers{
     width:100%;
     height:500px;
 }
 .footer{
-    padding-top:20px;
+    padding-top:50px;
     width:100%;
-    height: 270px;
+    height: 340px;
     background-color: white;
 }
 .sponsers-info{
-    background-color:white;
-    margin-top:50px;
-    height:100%;
+    margin-top:170px;
+    height:400px;
 }
 .map-wrap {
 	position:relative;
