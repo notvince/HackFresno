@@ -159,7 +159,7 @@ h1, h2, h3, h4, h5, h6,
     background-color: white;
 }
 .theme-header{
-    background-color: white;
+    background-color: #084C8C;
     padding-top:20px;
 }
 .first-theme{
@@ -184,9 +184,19 @@ h1, h2, h3, h4, h5, h6,
     /*background-color: rgba(18, 67, 90,0.5);*/
 }
 .faq-card{
-    height: 300px;
+    height: 250px;
     border: 15px white solid;
 }
+
+.faq-que{
+  font-size: 16pt;
+  font-weight: bold;
+}
+
+.faq-ans{
+  font-weight: bold;
+}
+
 .faq-header{
     background-color: white;
     height: 100px;
@@ -195,24 +205,32 @@ h1, h2, h3, h4, h5, h6,
     color:black;
     background-color:lightgrey;
 }
+
+
 .back{
     color:black;
     background-color:lightgrey;
 }
 .sponsers{
     width:100%;
-    height:500px;
+    height:800px;
 }
 .footer{
-    padding-top:50px;
+    padding-top:-20;
     width:100%;
-    height: 340px;
-    background-color: white;
+    height: 100px;
+    background-color:#084C8C;
 }
 .sponsers-info{
-    margin-top:170px;
+    margin-top:70px;
     height:400px;
 }
+
+.partners-info{
+    margin-top:-80px;
+    /*height:400px;*/
+}
+
 .map-wrap {
 	position:relative;
     margin-bottom: -6px;
