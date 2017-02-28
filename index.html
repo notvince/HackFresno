@@ -12,25 +12,33 @@
         <script src="assets/js/midnight.jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-        <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script> -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
         <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
         <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
     	<link rel="stylesheet" href="/assets/css/style.css"> <!-- Resource style -->
     	<script src="assets/js/modernizr.js"></script> <!-- Modernizr -->
+        <link rel="stylesheet" href="assets/css/bootstrap.css">
 
         <script>
             $(document).ready(function(){
                 $.backstretch("/assets/images/background.png");
                 $(".faq-card").flip({
-                    axis: 'x',
+                  trigger: 'click',
+                  axis: 'x',
+                  speed:500
                 });
+                $('.faq-card').hover(
+                  function() {
+                  },
+                  function() {
+                      $(".faq-card").flip(false);
+                  }
+                );
                 window.sr = ScrollReveal({});
                 sr.reveal('.fadezzz', { duration: 1000});
                 sr.reveal('.faq-card', { duration: 500});
                 $("a").on('click', function(event) {
-
                 // Make sure this.hash has a value before overriding default behavior
                 if (this.hash !== "") {
                   // Prevent default anchor click behavior
@@ -60,49 +68,50 @@
         });
         </script> -->
     </head>
-    <body>
-        <nav class="fixed" id="cd-vertical-nav">
-    <ul>
-        <li>
-            <a href="#top" data-number="1">
-                <span class="cd-dot"></span>
-                <span class="cd-label">Welcome</span>
+    <body data-spy="scroll" data-target="#cd-vertical-nav" data-offset="300">
+        <nav class="fixed" id="cd-vertical-nav" data-spy="affix">
+            <div id="scrollspying">
+                <ul class="nav">
+                    <li>
+                        <a href="#top" data-number="1">
+                            <span class="cd-dot"></span>
+                            <span class="cd-label nope">Welcome</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#about" data-number="2">
+                            <span class="cd-dot"></span>
+                            <span class="cd-label">About</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#themes" data-number="3">
+                            <span class="cd-dot"></span>
+                            <span class="cd-label">Themes</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#location" data-number="4">
+                            <span class="cd-dot"></span>
+                            <span class="cd-label">Location</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#faqs" data-number="5">
+                            <span class="cd-dot"></span>
+                            <span class="cd-label">FAQs</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#sponsers" data-number="6">
+                            <span class="cd-dot"></span>
+                            <span class="cd-label">Sponsors</span>
+                        </a>
+                    </li>
+                </ul>
             </div>
-            </a>
-        </li>
-        <li>
-            <a href="#about" data-number="2">
-                <span class="cd-dot"></span>
-                <span class="cd-label">About</span>
-            </a>
-        </li>
-        <li>
-            <a href="#themes" data-number="3">
-                <span class="cd-dot"></span>
-                <span class="cd-label">Themes</span>
-            </a>
-        </li>
-        <li>
-            <a href="#location" data-number="4">
-                <span class="cd-dot"></span>
-                <span class="cd-label">Location</span>
-            </a>
-        </li>
-        <li>
-            <a href="#faqs" data-number="5">
-                <span class="cd-dot"></span>
-                <span class="cd-label">FAQs</span>
-            </a>
-        </li>
-        <li>
-            <a href="#sponsers" data-number="6">
-                <span class="cd-dot"></span>
-                <span class="cd-label">Sponsors</span>
-            </a>
-        </li>
-    </ul>
-</nav>
-<a class="cd-nav-trigger cd-img-replace">Open navigation<span></span></a>
+        </nav>
+        <a class="cd-nav-trigger cd-img-replace">Open navigation<span></span></a>
         <div class="main-background" id="top">
             <div class="main-logo">
                 <img src="assets/images/FSHack2-800.png" alt="HackFresno" height="400" width="400">
@@ -164,34 +173,51 @@
             </div>
         <div class="row no-gutters" style="border-top: 1px solid #f0f0f0">
             <div class="col-md-12 theme-header text-center" id="themes" style="height: 155px">
-                <h1 class="display-5 text-center fadezzz" style="padding-top: 35px; padding-bottom: 50px; color:white;font-weight:bold">Themes</h1>
+                <h1 class="display-5 text-center fadezzz" style="padding-top: 35px; padding-bottom: 60px; color:white;font-weight:bold">Themes</h1>
             </div>
-            <div class="col-md-3 first-theme" style="height: 400px">
-                <div class="container text-center vertical-center">
+            <div class="col-md-3 first-theme vertical-center" style="height: 300px">
+                <div class="container text-center">
                   <h2 class="display-5 theme-icon"><i class="fa fa-graduation-cap" aria-hidden="true"></i></h2>
-                  <h2 class="display-5" style="color:white"><br>Education</h2>
+                  <h2 class="display-5" style="color:black">Education</h2>
+                  <div class="first-theme-text">
+                      <p>
+While technology has progressed rapidly, the way we educate students has largely stayed the same. Develop projects that help foster learning both in and out of the classroom, and that can help schools  better provide resources to their students.                      </p>
+                  </div>
                 </div>
             </div>
-            <div class="col-md-3 second-theme" style="height: 400px">
-                <div class="container text-center vertical-center">
+            <div class="col-md-3 second-theme vertical-center" style="height: 300px">
+                <div class="container text-center">
                     <h2 class="display-5 theme-icon"><i class="fa fa-heartbeat" aria-hidden="true"></i></h2>
-                    <h2 class="display-5" style="color:white">Health and Wellness</h2>
+                    <h2 class="display-5" style="color:black">Health & Wellness</h2>
+                    <div class="second-theme-text">
+                        <p>
+Technology has drastically improved the healthcare industry over the last century. Help take it a step further. Develop tools for doctors and hospitals to better care for patients, or design products that encourage people to maintain healthy lifestyles.                    </div>
                 </div>
             </div>
-            <div class="col-md-3 third-theme" style="height: 400px">
-                <div class="container text-center vertical-center">
-                    <h2 class="display-5" style="color:white">Environment and Agriculture</h2>
+            <div class="col-md-3 third-theme vertical-center" style="height: 300px">
+                <div class="container text-center">
+                    <h2 class="display-5 theme-icon"><i class="fa fa-globe" aria-hidden="true"></i></h2>
+                    <h2 class="display-5" style="color:black">Environment & Agriculture</h2>
+                    <div class="third-theme-text">
+                        <p>
+Help design solutions to keep the Earth safe and habitable for future generations. Projects in this category can include water management for California farmers, energy usage optimization for households, or tools to enforce environmental policy.                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-3 fourth-theme" style="height: 400px">
-                <div class="container text-center vertical-center">
-                    <h2 class="display-5" style="color:white">Social Good</h2>
+            <div class="col-md-3 fourth-theme vertical-center" style="height: 300px">
+                <div class="container text-center">
+                    <h2 class="display-5 theme-icon"><i class="fa fa-handshake-o" aria-hidden="true"></i></h2>
+                    <h2 class="display-5" style="color:black">Social Good</h2>
+                    <div class="fourth-theme-text">
+                        <p>
+Develop a project that can help bring our world closer together. Projects in this category can have applications in (but not limited to) government, philantropy, or socioeconomic inequality.                        </p>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="row no-gutters">
             <div class="col-md-12 location-header" id="location" style="height: 170px">
-                <h1 class="display-5 text-center" style="padding-top: 50px; padding-bottom: 50px;color:#084C8C;font-weight:bold">Location</h1>
+                <h1 class="display-5 text-center fadezzz" style="padding-top: 60px; padding-bottom: 50px;color:#084C8C;font-weight:bold">Location</h1>
             </div>
             <!-- <div class="col-md-2 first-location"></div> -->
             <div class="col-md-7 second-location text-center">
@@ -205,9 +231,9 @@
             </div>
         </div>
         <div class="faq">
-            <div class="row no-gutters" style="border-top: 1px solid #f0f0f0">
+            <div class="row no-gutters" style="border-top: 1px solid rgba(255,255,255,0.8);">
                 <div class="col-md-12 faq-header" id="faqs" style="height:160px">
-                    <h1 class="display-5 text-center" style="padding-top: 50px;color:#084C8C;font-weight:bold">Frequently Asked Questions</h1>
+                    <h1 class="display-5 text-center fadezzz" style="padding-top: 60px;color:#084C8C;font-weight:bold">Frequently Asked Questions</h1>
                 </div>
                 <div class="col-md-3 faq-card">
                     <div class="front">
@@ -275,47 +301,43 @@
                 </div>
             </div>
         </div>
-        <div class="sponsers row"  id="sponsers">
+        <div class="sponsers row no-gutters"  id="sponsers">
             <div class="col-md-2"></div>
             <div class="col-md-8">
                 <div class="container sponsers-info text-center">
-                    <h1 class ="display-4" style="color: white;">Sponsors</h1>
-                    <h2 class ="display-5" style ="color:white;">Coming soon!</h2>
-                    <p class ="pt-4" style="font-size:25px;color: white;font-weight:bold">Interested in sponsoring? Contact team@hackfresno.com</p>
+                    <h1 class ="display-4 fadezzz" style="color: white;">Sponsors</h1>
+                    <h2 class ="display-5 fadezzz" style ="color:white;">Coming soon!</h2>
+                    <p class ="pt-4 fadezzz" style="font-size:25px;color: white;font-weight:bold">Interested in sponsoring? Contact team@hackfresno.com</p>
                 </div>
                 <div class="container partners-info text-center">
-                    <h1 class ="display-4" style="color: white;">Partners</h1>
+                    <h1 class ="display-4 fadezzz" style="color: white;">Partners</h1>
                 </div>
-                  <div class="col-md-8">
-                    <img style="max-width: 180px;" class="logo" src="assets/images/logos/ieeefresno.png">
+                  <div class="fadezzz text-center pt-3">
+                    <img style="max-width: 150px" class="logo" src="assets/images/logos/ieeefresno.png">
+                    <img style="padding-left: 60px;width: 270px;" src="assets/images/logos/mlh-logo-white.svg" />
                 </div>
             </div>
         </div>
-        <div class="footer">
+        <div class="footer no-gutters pt-3">
             <div class="container pt-3 text-center">
-                <div class="row">
-                    <div class="col-md-5">
-                    </div>
-                </div>
                 <a href="https://twitter.com/Fresno_State" target="_blank" class="btn btn-social-icon">
                   <span class="fa fa-twitter"></span>
                 </a>
                 <a href="https://www.facebook.com/FresnoState/" target="_blank" class="btn btn-social-icon">
                   <span class="fa fa-facebook"></span>
                 </a>
-                <!-- <a href="https://www.instagram.com/fresno_state/?hl=en" target="_blank" class="btn btn-social-icon btn-instagram">
-                  <span class="fa fa-instagram"></span>
-                </a> -->
                 <a href="https://soundcloud.com/thechainsmokers/closer" target="_blank" class="btn btn-social-icon">
                   <span class="fa fa-soundcloud"></span>
                 </a>
-                <div class="container im-centered">
-                    <div class="row pt-1">
-                        <h4 class="display-6 pr-2" style="color: white">Made with </h4>
-                        <i class="em em-heart"></i>
-                        <h4 class="display-6 pl-2" style="color: white">by HackFresno</h4>
+                <div class="row pt-3">
+                    <div class="col-md-12 text-center">
+                        <h5 class="display-6 pr-2" style="color: white;display:inline-block">Made with </h5>
+                        <i class="em em-heart" style="color: white;display:inline-block"></i>
+                        <h5 class="display-6 pl-2" style="color: white;display:inline-block">by HackFresno</h5>
                     </div>
                 </div>
+            </div>
         </div>
+        <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:absolute;left:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/na-2017/events?utm_source=na-2017&utm_medium=TrustBadge&utm_campaign=na-2017&utm_content=white" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg" alt="Major League Hacking 2017 Hackathon Season" style="width:100%"></a>
     </body>
 </html>
