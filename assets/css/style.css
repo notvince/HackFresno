@@ -29,7 +29,7 @@ body, html {
 
 a {
   color: #084C8C;
-  text-decoration: none !important;
+  text-decoration: none;
 }
 
 img {
@@ -170,51 +170,6 @@ Main components
   -o-transform: scale(1.4);
   transform: scale(1.4);
 }
-
-.no-touch #cd-vertical-nav .active .cd-dot {
-    -webkit-transform: scale(1.4);
-    -moz-transform: scale(1.4);
-    -ms-transform: scale(1.4);
-    -o-transform: scale(1.4);
-    transform: scale(1.4);
-}
-
-.no-touch #cd-vertical-nav .active .cd-label {
-    opacity: 1;
-    background-color: grey;
-    -webkit-transform: scale(1.4);
-    -moz-transform: scale(1.4);
-    -ms-transform: scale(1.4);
-    -o-transform: scale(1.4);
-    transform: scale(1.4);
-    -webkit-animation: NAME-YOUR-ANIMATION 1s forwards; /* Safari 4+ */
-    -moz-animation:    NAME-YOUR-ANIMATION 1s forwards; /* Fx 5+ */
-    -o-animation:      NAME-YOUR-ANIMATION 1s forwards; /* Opera 12+ */
-    animation:         NAME-YOUR-ANIMATION 1s forwards; /* IE 10+, Fx 29+ */
-    animation-delay: 0.75s;
-}
-
-@-webkit-keyframes NAME-YOUR-ANIMATION {
-  0%   {  }
-  100% { opacity: 0; }
-}
-@-moz-keyframes NAME-YOUR-ANIMATION {
-  0%   {  }
-  100% { opacity: 0; }
-}
-@-o-keyframes NAME-YOUR-ANIMATION {
-  0%   {  }
-  100% { opacity: 0; }
-}
-@keyframes NAME-YOUR-ANIMATION {
-  0%   {  }
-  100% { opacity: 0; }
-}
-
-.no-touch #cd-vertical-nav .active .cd-label.nope {
-    opacity: 0 !important;
-}
-
 .no-touch #cd-vertical-nav a:hover .cd-label {
   opacity: 1;
 }
@@ -225,8 +180,8 @@ Main components
   position: relative;
   /* we set a top value in order to align the dot with the label. If you change label's font, you may need to change this top value*/
   top: 8px;
-  height: 16px;
-  width: 16px;
+  height: 12px;
+  width: 12px;
   border-radius: 50%;
   background-color: #f25752;
   -webkit-transition: -webkit-transform 0.2s, background-color 0.5s;
@@ -240,18 +195,14 @@ Main components
 }
 .no-touch #cd-vertical-nav .cd-label {
   position: relative;
-  background-color:grey;
-  border-radius: 30px;
-  margin-top: 5px;
-  margin-bottom: 5px;
   margin-right: 10px;
-  padding: .1em .5em;
+  padding: .4em .5em;
   color: white;
   font-size: 14px;
-  font-size: 0.825rem;
-  -webkit-transition: -webkit-transform 0.15s, opacity 0.2s;
-  -moz-transition: -moz-transform 0.15s, opacity 0.2s;
-  transition: transform 0.15s, opacity 0.2s;
+  font-size: 0.875rem;
+  -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+  -moz-transition: -moz-transform 0.2s, opacity 0.2s;
+  transition: transform 0.2s, opacity 0.2s;
   opacity: 0;
   -webkit-transform-origin: 100% 50%;
   -moz-transform-origin: 100% 50%;
@@ -259,9 +210,7 @@ Main components
   -o-transform-origin: 100% 50%;
   transform-origin: 100% 50%;
 }
-.cd-label:hover {
-    opacity:1 !important;
-}
+
 /* Touch devices */
 .touch .cd-nav-trigger {
   display: block;
