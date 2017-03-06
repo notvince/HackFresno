@@ -2,27 +2,39 @@
 <html>
     <head>
         <title>HackFresno</title>
+        
+        <!-- Style Sheets -->
         <link rel="stylesheet" href="assets/css/font-awesome.min.css">
         <link rel="stylesheet" href="assets/css/bootstrap-social.css">
         <link rel="stylesheet" href="assets/css/main.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/bootstrap.css">
+
+        <!-- FLAVICON -->
+        <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
+        
+        <!-- META DATA -->
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=.75">
+
+        <!-- Scripts -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="assets/js/jquery.backstretch.min.js"></script>
         <script src="assets/js/script.js"></script>
         <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
         <script src="assets/js/midnight.jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-        <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
         <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-        <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
-    	<link rel="stylesheet" href="/assets/css/style.css"> <!-- Resource style -->
     	<script src="assets/js/modernizr.js"></script> <!-- Modernizr -->
-        <link rel="stylesheet" href="assets/css/bootstrap.css">
+        
+        <!-- CSS -->
+        <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
 
         <script>
             $(document).ready(function(){
-                $.backstretch("/assets/images/background.png");
+                $.backstretch("assets/images/background.png");
                 $(".faq-card").flip({
                   trigger: 'click',
                   axis: 'x',
@@ -117,16 +129,30 @@
                 <img src="assets/images/FSHack2-800.png" alt="HackFresno" height="400" width="400">
                 <div class="date-and-location">
                     <h2 class="display-5">
-                        April 14-16 / Fresno State
+                        April 14-15 / Fresno State
                     </h2>
                     <a class="signup-hyper" href="#">
-                        <div class="row no-gutters">
+                        <div class="row" style="padding-left: 97px !important">
                             <div class="col-sm-3 col-md-3 col-lg-3"></div>
-                            <div class="signup-button col-sm-6 col-md-6 col-lg-6">
-                                <h6 class="display-5 signup-text">
-                                    APPLY
-                                </h6>
-                            </div>
+                            <a style="width: 171px !important" class="typeform-share signup-button signup-text" href="https://hackfresno.typeform.com/to/UtgB80" data-mode="1" target="_blank">Apply</a>
+                            <script>(function(){
+                              var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm_share',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';
+                              if(!gi.call(d,id)){
+                                js=ce.call(d,'script');
+                                js.id=id;js.src=b+'share.js';
+                                q=gt.call(d,'script')[0];
+                                q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');
+                                qs.rel='stylesheet';qs.id=id;
+                                qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)
+                              }
+                            })()
+                            </script>
+
+                            <!-- <div class="signup-button col-sm-6 col-md-6 col-lg-6">
+                              <h6 class="display-5 signup-text">
+                                  APPLY
+                              </h6>
+                            </div> -->
                         </div>
                     </a>
                 </div>
@@ -141,7 +167,9 @@
                       that encourages creativity and innovation while solving
                       some of the world's toughest problems. Stay up for 24 hours with the
                       coolest and brightest people you will ever meet, and help design a product
-                      that can improve the world.
+                      that can improve the world. This year, we are focusing all projects on four core
+                      themes. These themes encompass some of today's toughest issues, and encourage teams
+                      to think of ways to use their skills to benefit the world around them.
                     </p>
                     <p style="font-size: 20px;">
                       Everyone is welcome, from the most experienced developers and
@@ -219,7 +247,7 @@ Develop a project that can help bring our world closer together. Projects in thi
                         <p class="pt-3 pl-3 pr-3 faq-que">What is a hackathon?</p>
                     </div>
                     <div class="back">
-                        <p class="pt-3 pl-3 pr-3 faq-ans">A hackathon is a nonstop design and innovation competition. Over the course of 24 hours, teams develop projects that solve real-world problems. At the end of the hackathon, teams show off their work to judges and other participants.</p>
+                        <p class="pt-3 pl-3 pr-3 faq-ans">A hackathon is a nonstop design and innovation competition. Over the 24 hours, teams develop projects that solve real-world problems. At the end of the hackathon, teams show off their work to judges and other participants.</p>
                     </div>
                 </div>
                 <div class="col-md-3 faq-card">
@@ -227,7 +255,7 @@ Develop a project that can help bring our world closer together. Projects in thi
                         <p class="pt-3 pl-3 pr-3 faq-que">So, we're not breaking into anyone's computers right?</p>
                     </div>
                     <div class="back">
-                        <p class="pt-3 pl-3 pr-3 faq-ans">Nope! In this case, "hacking" refers to collaborating on a task, usually with code, to solve a specific problem. <a href="https://medium.com/essays-by-kern/what-is-a-hackathon-c2162b893b0a#.ha18iujrw">Read this</a> great article that goes further in depth about hackathons.</p>
+                        <p class="pt-3 pl-3 pr-3 faq-ans">Nope! In this case, "hacking" refers to collaborating on a task, usually with code, to solve a specific problem. <a href="https://medium.com/essays-by-kern/what-is-a-hackathon-c2162b893b0a">Read this</a> great article that goes further in depth about hackathons.</p>
                     </div>
                 </div>
                 <div class="col-md-3 faq-card">
