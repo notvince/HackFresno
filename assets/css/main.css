@@ -109,6 +109,10 @@ h1, h2, h3, h4, h5, h6,
     background-color: white;
 }
 
+.about-text{
+   text-align:justify;
+}
+
 @media screen and (max-width: 767px) {
     .second-location{
         background-color: rgba(8, 76, 140,0.5);
@@ -153,26 +157,35 @@ h1, h2, h3, h4, h5, h6,
     background-color: #084C8C;
     padding-top:20px;
 }
+
+.theme-text{
+  width: 75%;
+}
+
 .first-theme-text{
     position:absolute;
     -webkit-transition: opacity 0.4s;
+    text-align:center;
 }
 .second-theme-text{
     position:absolute;
     opacity:0;
     -webkit-transition: opacity 0.4s;
+    text-align:center;
 
 }
 .third-theme-text{
     position:absolute;
     opacity:0;
     -webkit-transition: opacity 0.4s;
+    text-align:center;
 
 }
 .fourth-theme-text{
     position:absolute;
     opacity:0;
     -webkit-transition: opacity 0.4s;
+    text-align:center ;
 
 }
 .first-theme{
@@ -305,9 +318,13 @@ h1, h2, h3, h4, h5, h6,
     cursor: pointer;
 
 }
-.sponsers{
+.sponsors{
     width:100%;
+<<<<<<< Updated upstream
     height:1300px;
+=======
+    height:1200px;
+>>>>>>> Stashed changes
 }
 .footer{
     width:100%;
@@ -315,9 +332,13 @@ h1, h2, h3, h4, h5, h6,
     background-color:#084C8C;
     padding-bottom: 160px;
 }
-.sponsers-info{
+.sponsors-info{
     margin-top:70px;
+<<<<<<< Updated upstream
     height:950px;
+=======
+    height:850px;
+>>>>>>> Stashed changes
 }
 
 .partners-info{
@@ -357,4 +378,40 @@ h1, h2, h3, h4, h5, h6,
 
   display: flex;
   align-items: center;
+}
+
+.tier-1 .logo{
+    height: auto;
+    width: 1100px;
+}
+.tier-2 .logo{
+    height: auto;
+    width: 600px;
+}
+.tier-3 .logo{
+    height: auto;
+    width: 350px;
+}
+.tier-4 .logo{
+    height: auto;
+    width: 150px;
+}
+
+.logo.bitwise{
+    height: auto;
+    min-width: 350px;
+    padding-top: 50px;
+}
+
+.logo.github{
+    width:auto;
+    height:100px;
+    margin-top: 20px;
+}
+
+.logo.adobe{
+    max-height: 190px;
+    width: auto;
+    margin-top: 40px;
+
 }
