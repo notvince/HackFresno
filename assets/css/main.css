@@ -320,7 +320,7 @@ h1, h2, h3, h4, h5, h6,
 }
 .sponsors{
     width:100%;
-    height:1550px;
+    height:1300px;
 }
 .footer{
     width:100%;
@@ -330,7 +330,7 @@ h1, h2, h3, h4, h5, h6,
 }
 .sponsors-info{
     margin-top:70px;
-    height:1200px;
+    height:900px;
 }
 
 .fssaem{
@@ -414,4 +414,7 @@ h1, h2, h3, h4, h5, h6,
     width: auto;
     margin-top: 40px;
 
+}
+.logo.stickermule{
+    margin-top:25px;
 }
