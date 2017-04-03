@@ -308,7 +308,7 @@ h1, h2, h3, h4, h5, h6,
 }
 .sponsors{
     width:100%;
-    height:1200px;
+    height:1550px;
 }
 .footer{
     width:100%;
@@ -318,9 +318,17 @@ h1, h2, h3, h4, h5, h6,
 }
 .sponsors-info{
     margin-top:70px;
-    height:850px;
+    height:1200px;
 }
 
+.fssaem{
+    height: 100px !important;
+    width: 100px !important;
+}
+.lcoe{
+    height: 100px !important;
+    width: auto !important;
+}
 .partners-info{
     margin-top:-80px;
     /*height:400px;*/
@@ -385,7 +393,7 @@ h1, h2, h3, h4, h5, h6,
 
 .logo.github{
     width:auto;
-    height:100px;
+    height:95px;
     margin-top: 20px;
 }
 
