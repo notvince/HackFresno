@@ -308,7 +308,7 @@ h1, h2, h3, h4, h5, h6,
 }
 .sponsors{
     width:100%;
-    height:1300px;
+    /*height:1350px;*/
 }
 .footer{
     width:100%;
@@ -318,20 +318,11 @@ h1, h2, h3, h4, h5, h6,
 }
 .sponsors-info{
     margin-top:70px;
-    height:900px;
-}
-
-.fssaem{
-    height: 100px !important;
-    width: 100px !important;
-}
-.lcoe{
-    height: 100px !important;
-    width: auto !important;
+    height:100%;
 }
 .partners-info{
-    margin-top:-80px;
-    /*height:400px;*/
+    margin-bottom:100px;
+    /*height:0px;*/
 }
 
 .map-wrap {
@@ -405,4 +396,16 @@ h1, h2, h3, h4, h5, h6,
 }
 .logo.stickermule{
     margin-top:25px;
+}
+.logo.fsts{
+    height: 100px !important;
+    width: auto !important;
+}
+.logo.fssaem{
+    height: 100px !important;
+    width: 100px !important;
+}
+.logo.lcoe{
+    height: 100px !important;
+    width: auto !important;
 }
