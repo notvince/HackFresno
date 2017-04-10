@@ -34,7 +34,7 @@
 
         <script>
             $(document).ready(function(){
-                $.backstretch("assets/images/background.png");
+                $.backstretch("assets/images/background-small.png");
                 $(".faq-card").flip({
                   trigger: 'click',
                   axis: 'x',
@@ -115,7 +115,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#sponsers" data-number="6">
+                        <a href="#sponsors" data-number="6">
                             <span class="cd-dot"></span>
                             <span class="cd-label">Sponsors</span>
                         </a>
@@ -162,20 +162,22 @@
             <div class="about" id="about">
                 <div class="container pt-3 pb-3 fadezzz">
                     <h1 class="display-5" style="padding-top: 50px;padding-bottom: 30px;color:#084C8C;font-weight:bold">What is HackFresno?</h1>
-                    <p style="font-size: 20px;">
-                      HackFresno is a student hackathon at Fresno State
-                      that encourages creativity and innovation while solving
-                      some of the world's toughest problems. Stay up for 24 hours with the
-                      coolest and brightest people you will ever meet, and help design a product
-                      that can improve the world. This year, we are focusing all projects on four core
-                      themes. These themes encompass some of today's toughest issues, and encourage teams
-                      to think of ways to use their skills to benefit the world around them.
-                    </p>
-                    <p style="font-size: 20px;">
-                      Everyone is welcome, from the most experienced developers and
-                      designers to first-time programmers with a drive to solve our biggest challenges.
-                      Regardless of your skill, there is a place for you at HackFresno.
-                    </p>
+                    <div class="about-text">
+                      <p style="font-size: 20px;">
+                        HackFresno is a student hackathon at Fresno State
+                        that encourages creativity and innovation while solving
+                        some of the world's toughest problems. Stay up for 24 hours with the
+                        coolest and brightest people you will ever meet, and help design a product
+                        that can improve the world. This year, we are focusing all projects on four core
+                        themes. These themes encompass some of today's toughest issues, and encourage teams
+                        to think of ways to use their skills to benefit the world around them.
+                      </p>
+                      <p style="font-size: 20px;">
+                        Everyone is welcome, from the most experienced developers and
+                        designers to first-time programmers with a drive to solve our biggest challenges.
+                        Regardless of your skill, there is a place for you at HackFresno.
+                      </p>
+                    </div>
                 </div>
             </div>
         <div class="row no-gutters" style="border-top: 1px solid #f0f0f0">
@@ -183,7 +185,7 @@
                 <h1 class="display-5 text-center fadezzz" style="padding-top: 35px; padding-bottom: 60px; color:white;font-weight:bold">Themes</h1>
             </div>
             <div class="col-md-3 first-theme vertical-center" style="height: 300px">
-                <div class="container text-center">
+                <div class="container theme-text text-center">
                   <h2 class="display-5 theme-icon"><i class="fa fa-graduation-cap" aria-hidden="true"></i></h2>
                   <h2 class="display-5" style="color:black">Education</h2>
                   <div class="first-theme-text">
@@ -193,7 +195,7 @@ While technology has progressed rapidly, the way we educate students has largely
                 </div>
             </div>
             <div class="col-md-3 second-theme vertical-center" style="height: 300px">
-                <div class="container text-center">
+                <div class="container theme-text text-center">
                     <h2 class="display-5 theme-icon"><i class="fa fa-heartbeat" aria-hidden="true"></i></h2>
                     <h2 class="display-5" style="color:black">Health & Wellness</h2>
                     <div class="second-theme-text">
@@ -202,7 +204,7 @@ Technology has drastically improved the healthcare industry over the last centur
                 </div>
             </div>
             <div class="col-md-3 third-theme vertical-center" style="height: 300px">
-                <div class="container text-center">
+                <div class="container theme-text text-center">
                     <h2 class="display-5 theme-icon"><i class="fa fa-globe" aria-hidden="true"></i></h2>
                     <h2 class="display-5" style="color:black">Environment & Agriculture</h2>
                     <div class="third-theme-text">
@@ -212,7 +214,7 @@ Help design solutions to keep the Earth safe and habitable for future generation
                 </div>
             </div>
             <div class="col-md-3 fourth-theme vertical-center" style="height: 300px">
-                <div class="container text-center">
+                <div class="container theme-text text-center">
                     <h2 class="display-5 theme-icon"><i class="fa fa-handshake-o" aria-hidden="true"></i></h2>
                     <h2 class="display-5" style="color:black">Social Good</h2>
                     <div class="fourth-theme-text">
@@ -308,43 +310,80 @@ Develop a project that can help bring our world closer together. Projects in thi
                 </div>
             </div>
         </div>
-        <div class="sponsers row no-gutters"  id="sponsers">
+        <div class="container pb-3">
+        <div class="sponsors row no-gutters pb-3"  id="sponsors">
             <div class="col-md-2"></div>
             <div class="col-md-8">
-                <div class="container sponsers-info text-center">
+                <div class="container sponsors-info text-center">
                     <h1 class ="display-4 fadezzz" style="color: white;">Sponsors</h1>
-                    <h2 class ="display-5 fadezzz" style ="color:white;">Coming soon!</h2>
-                    <p class ="pt-4 fadezzz" style="font-size:25px;color: white;font-weight:bold">Interested in sponsoring? Contact team@hackfresno.com</p>
-                </div>
-                <div class="container partners-info text-center">
-                    <h1 class ="display-4 fadezzz" style="color: white;">Partners</h1>
-                </div>
-                  <div class="fadezzz text-center pt-3">
-                    <img style="max-width: 150px" class="logo" src="assets/images/logos/ieeefresno.png">
-                    <img style="padding-left: 60px;width: 270px;" src="assets/images/logos/mlh-logo-white.svg" />
-                </div>
-            </div>
-        </div>
-        <div class="footer no-gutters pt-3">
-            <div class="container pt-3 text-center">
-                <a href="https://twitter.com/Fresno_State" target="_blank" class="btn btn-social-icon">
-                  <span class="fa fa-twitter"></span>
-                </a>
-                <a href="https://www.facebook.com/FresnoState/" target="_blank" class="btn btn-social-icon">
-                  <span class="fa fa-facebook"></span>
-                </a>
-                <a href="https://soundcloud.com/thechainsmokers/closer" target="_blank" class="btn btn-social-icon">
-                  <span class="fa fa-soundcloud"></span>
-                </a>
-                <div class="row pt-3">
-                    <div class="col-md-12 text-center">
-                        <h5 class="display-6 pr-2" style="color: white;display:inline-block">Made with </h5>
-                        <i class="em em-heart" style="color: white;display:inline-block"></i>
-                        <h5 class="display-6 pl-2" style="color: white;display:inline-block">by HackFresno</h5>
+                    <!-- <h2 class ="display-5 fadezzz" style ="color:white;">Coming soon!</h2> -->
+                    <p class ="pt-4 fadezzz " style="font-size:25px;color: white;font-weight:bold">Interested in sponsoring? Contact team@hackfresno.com</p>
+                    <div class="row no-gutters text-center tier-1">
+                    </div>
+                    <div class="row no-gutters text-center tier-2">
+                    </div>
+                    <div class="pb-3 row no-gutters text-center tier-3">
+                        <div class="col-md-12">
+                            <img class="logo bitwise fadezzz" src="assets/images/logos/Bitwise_white.png">
+                        </div>
+                        <div class="col-md-12">
+                            <img class="logo adobe fadezzz" src="assets/images/logos/Adobe_standard_logo_RGB.jpg">
+                        </div>
+                    </div>
+                    <div class="pt-3 pb-3 row no-gutters text-center tier-4">
+                        <div class="pt-3 col-md-4 pb-3">
+                            <img class="logo lcoe fadezzz" src="assets/images/logos/Lyles College Eng-stacked-White.png">
+                        </div>
+                        <div class="col-md-4 pb-3">
+                            <img class="logo github fadezzz" src="assets/images/logos/GitHub-Mark-Light-120px-plus.png">
+                        </div>
+                        <div class="pt-3 col-md-4 pb-3">
+                            <img class="logo fssaem fadezzz" src="assets/images/logos/fssaem.png">
+                        </div>
+                        <div class="pt-3 col-md-4 pt-3">
+                          <a href="https://www.stickermule.com/">
+                            <img class="logo stickermule fadezzz" src="assets/images/logos/sticker-mule-inline-light.png">
+                          </a>
+                        </div>
+                    </div>
+                    <div class="fadezzz row no-gutters text-center pt-3 pb-3">
+                        <div class="col-md-12 text-center pb-3 pt-3">
+                            <h1 class ="display-4 fadezzz" style="color: white;">Partners</h1>
+                        </div>
+                        <div class="pt-3 col-md-4 pt-3">
+                            <img style="max-width: 130px" class="logo" src="assets/images/logos/ieeefresno.png">
+                        </div>
+                        <div class="pt-3 col-md-4 pt-3">
+                            <img style="width: 230px;" src="assets/images/logos/mlh-logo-white.svg" />
+                        </div>
+                        <div class="pt-3 col-md-4 pb-3">
+                            <img class="logo fsts fadezzz" src="assets/images/logos/ts_logo_stacked_bg.png">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
         <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:absolute;left:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/na-2017/events?utm_source=na-2017&utm_medium=TrustBadge&utm_campaign=na-2017&utm_content=white" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg" alt="Major League Hacking 2017 Hackathon Season" style="width:100%"></a>
     </body>
+    <div class="footer no-gutters pt-3">
+        <div class="container pt-3 text-center">
+            <a href="https://twitter.com/Fresno_State" target="_blank" class="btn btn-social-icon">
+              <span class="fa fa-twitter"></span>
+            </a>
+            <a href="https://www.facebook.com/FresnoState/" target="_blank" class="btn btn-social-icon">
+              <span class="fa fa-facebook"></span>
+            </a>
+            <a href="https://soundcloud.com/thechainsmokers/closer" target="_blank" class="btn btn-social-icon">
+              <span class="fa fa-soundcloud"></span>
+            </a>
+            <div class="row pt-3">
+                <div class="col-md-12 text-center">
+                    <h5 class="display-6 pr-2" style="color: white;display:inline-block">Made with </h5>
+                    <i class="em em-heart" style="color: white;display:inline-block"></i>
+                    <h5 class="display-6 pl-2" style="color: white;display:inline-block">by HackFresno</h5>
+                </div>
+            </div>
+        </div>
+    </div>
 </html>
