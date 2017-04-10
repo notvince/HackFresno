@@ -106,8 +106,11 @@ h1, h2, h3, h4, h5, h6,
 
 .about{
     width:100%;
-    height: 420px;
     background-color: white;
+}
+
+.about-text{
+   text-align:justify;
 }
 
 @media screen and (max-width: 767px) {
@@ -154,26 +157,35 @@ h1, h2, h3, h4, h5, h6,
     background-color: #084C8C;
     padding-top:20px;
 }
+
+.theme-text{
+  width: 75%;
+}
+
 .first-theme-text{
     position:absolute;
     -webkit-transition: opacity 0.4s;
+    text-align:center;
 }
 .second-theme-text{
     position:absolute;
     opacity:0;
     -webkit-transition: opacity 0.4s;
+    text-align:center;
 
 }
 .third-theme-text{
     position:absolute;
     opacity:0;
     -webkit-transition: opacity 0.4s;
+    text-align:center;
 
 }
 .fourth-theme-text{
     position:absolute;
     opacity:0;
     -webkit-transition: opacity 0.4s;
+    text-align:center ;
 
 }
 .first-theme{
