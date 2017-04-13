@@ -62,7 +62,7 @@ h1, h2, h3, h4, h5, h6,
         border: solid #000;
         border-color: white;
         border-width: 2px;
-        padding: 5px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
         color: white;
         -webkit-transition: all 0.5s ease-out;
         -moz-transition: all 0.5s ease-out;
@@ -84,7 +84,7 @@ h1, h2, h3, h4, h5, h6,
     -ms-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out;
 }
-
+/*
 .signup-button:hover{
     -o-transition:0.5s;
     -ms-transition:0.5s;
@@ -94,7 +94,7 @@ h1, h2, h3, h4, h5, h6,
     background-color: white;
     color: #324176;
     cursor: pointer;
-}
+}*/
 
 .signup-text{
     font-size:20px!important;
