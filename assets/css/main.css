@@ -396,7 +396,7 @@ h1, h2, h3, h4, h5, h6,
 
 .logo.github{
     width:auto;
-    height:95px;
+    height:105px;
     margin-top: 20px;
 }
 
@@ -406,17 +406,47 @@ h1, h2, h3, h4, h5, h6,
     margin-top: 40px;
 }
 .logo.stickermule{
-    margin-top:25px;
+    margin-top:5px;
+    height: 60px !important;
+    width: auto !important;
 }
 .logo.fsts{
     height: 170px !important;
     width: auto !important;
 }
 .logo.fssaem{
-    height: auto !important;
+    height: 60px !important;
     width: auto !important;
 }
 .logo.lcoe{
-    height: 100px !important;
+    height: 130px !important;
+    width: auto !important;
+}
+.logo.onesense{
+    margin-top:70px;
+}
+.logo.ieee{
+    margin-top:10px;
+    height: 80px !important;
+    width: auto !important;
+}
+.logo.microsoft{
+    margin-top:20px;
+}
+.logo.apple{
+    height: 80px !important;
+    width: auto !important;
+}
+.logo.cisco{
+    margin-top:15px;
+    height: 70px !important;
+    width: auto !important;
+}
+.logo.salesforce{
+    height: 80px !important;
+    width: auto !important;
+}
+.logo.fusd{
+    height: 70px !important;
     width: auto !important;
 }
