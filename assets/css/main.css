@@ -404,18 +404,17 @@ h1, h2, h3, h4, h5, h6,
     max-height: 190px;
     width: auto;
     margin-top: 40px;
-
 }
 .logo.stickermule{
     margin-top:25px;
 }
 .logo.fsts{
-    height: 100px !important;
+    height: 170px !important;
     width: auto !important;
 }
 .logo.fssaem{
-    height: 100px !important;
-    width: 100px !important;
+    height: auto !important;
+    width: auto !important;
 }
 .logo.lcoe{
     height: 100px !important;
